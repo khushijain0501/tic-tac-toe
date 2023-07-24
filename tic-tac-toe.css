@@ -1,152 +1,201 @@
 
 body{
-background-color: rgb(42, 42, 42);
-font-family: Arial;
-}
-h1{
-    color: white;
-    margin-left: 30px;
-    margin-top: 30px;
-    font-size: 50px;
-}
-h3{
-    color: white;
-    margin-left: 15px;
-    margin-top: 30px;
-    font-weight: 100;
-}
-.game-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap ;
-}
-.about-game{
-    margin-left: 50px;
-    margin-bottom: 20px;
-}
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,100px);
-    grid-template-rows: repeat(3,100px);
-    column-gap: 10px;
-    row-gap: 10px;
-    low;
-}
-.game-space{
-    display: flex;
-    font-size: 60px;
-    position: relative;
-    width: 120px;
-    height: 120px;
-    background-color: rgb(245, 245, 220);
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
+    background-image:url("cool-css-backgrounds.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa', cursive;
     color: black;
-    font-weight: 500;
-    border: none;
-    border: solid;
-    border-color: black;
-    border-width: 6px;
-    border-radius: 10px;
-}
-.game-space:hover
-{
-    background-color: rgb(243, 243, 170);
-}
-.additionals{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    flex:2 1;
-    align-items: center;
-}
-.restart-button,.music-button,.newgame{
-    margin-right: 30px;
-    border: none;
-    background-color: lightgray;
-    font-size: 17px;
-    padding: 10px; 
-    cursor: pointer;
-    height: 50px;
-    align-items: center;
-    padding-top: 10px;
-    box-shadow: 2px 2px  rgba(126,126,126,8);
-}
-.restart-button:active,.music-button:active, .newgame:active {
-    background-color: rgb(126, 126, 126);
-    box-shadow: 3px 3px 1px rgba(126,126,126,0.8);
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
+    h1{
+        color: black;
+        margin-left: 30px;
+        margin-top: 30px;
+        font-size: 60px;
+        font-family: 'Mynerve', cursive;
+
+    }
+    h3{
+        color: black;
+        margin-left: 15px;
+        margin-top: 30px;
+        font-weight: 100;
+    }
+    .game-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap ;
+    }
+    .about-game{
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: repeat(3,100px);
+        column-gap: 16px;
+        row-gap: 16px;
+        
+    }
+    .game-space{
+        display: flex;
+        font-size: 60px;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-weight: 500;
+        border: none;
+        border: solid;
+        border-color: rgb(30, 26, 31);
+        border-width: 3px;
+        
+    }
+    .b1{
+        border-top: 0;
+        border-left: 0;
+    }
+    .b2{
+        border-top: 0;
+    }
+    .b3{
+        border-top: 0;
+        border-right: 0;
+    }
+    .b4{
+        border-left: 0;
+    }
+    .b6{
+        border-right: 0;
+
+    }
+    .b7{
+        border-left: 0;
+        border-bottom: 0;
+    }
+    .b8{
+        border-bottom: 0;
+    }
+    .b9{
+        border-bottom: 0;
+        border-right: 0;
+    }
+    .game-space:hover
+    {
+        background-color: rgba(143, 141, 142, 0.593);
+    }
+    .additionals{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        flex:2 1;
+        align-items: center;
+    }
+    .restart-button,.music-button,.newgame{
+        margin-right: 30px;
+        border: none;
+        background-color: lightgray;
+        font-size: 17px;
+        font-family: 'Comfortaa', cursive;
+        padding: 10px; 
+        cursor: pointer;
+        height: 50px;
+        align-items: center;
+        padding-top: 10px;
+        box-shadow: 2px 2px  rgba(126,126,126,8);
+    }
+    .restart-button:active,.music-button:active, .newgame:active{
+        background-color: rgb(126, 126, 126);
+        box-shadow: 3px 3px 1px rgba(126,126,126,0.8);
+    }
+    .start:active{
+        background-color: rgb(31, 109, 31);
+        box-shadow: 3px 3px 1px rgba(126,126,126,0.8);
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about-game{
+       
+        font-size: 20px;
+    }
+    .start{
+        background-color: rgb(40, 154, 40);
+        color: rgb(23, 22, 22);
+        border: solid;
+        border-color: black;
+        border-width: 1.5px;
+        box-shadow: 1px 1px 1px rgb(85, 83, 83) ;
+        padding: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .score-head{
+        margin-left: 125px;
+        font-size: 20px;
+        align-items: center;
+        font-weight: 600;
+    }
+    .scorecard-head,.scorecard{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-width: 100px;
+        margin-left: 70px;
+        align-items: center;
+        column-gap: 50px;
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        
+    }
     
-}
-.about-game{
-   
-    font-size: 20px;
-}
-.start{
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.score-head{
-    margin-left: 125px;
-    font-size: 20px;
-    align-items: center;
-}
-.scorecard-head,.scorecard{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-width: 100px;
-    margin-left: 70px;
-    align-items: center;
-    column-gap: 50px;
-    font-size: 20px;
-    font-weight: 700;
-    color: black;
     
-}
-
-
-.player1,.player2{
-    color: white;
-    font-size: 25px;
-    padding: 20px;
-    box-shadow: 3px 3px 1px rgba(126,126,126,0.8);
-
-}
-.player1{
-    background-color: lightgray;
-    color: black;
-}
-.player2{
-    background-color: lightgray;
-    color: black;
-}
-
-.name1,.name2{
-    background-color: lightgray;
-    border: none;
-    padding: 10px;
-    margin-left: 10px;
-
-}
-.music:hover{
-    background-color:blue;
-}
-.msg,.turn{
-    font-size: 30px;
-    margin-left: 20px;
-    color:lightgray;
-}
-p{
-    margin-bottom: 10px;
-    color: white;
-}
+    .player1,.player2{
+        color:black;
+        font-size: 25px;
+        padding: 20px;
+        box-shadow: 3px 3px 1px rgba(126,126,126,0.8);
+    
+    }
+    .player1{
+        background-color: lightgray;
+        color: black;
+    }
+    .player2{
+        background-color: lightgray;
+        color: black;
+    }
+    
+    .name1,.name2{
+        background-color: lightgray;
+        border: solid;
+        border-color: black;
+        border-width: 1px;
+        padding: 10px;
+        margin-left: 10px;
+    
+    }
+    .music:hover{
+        background-color:blue;
+    }
+    .msg,.turn{
+        font-size: 30px;
+        margin-left: 20px;
+        color:black;
+    }
+    p{
+        margin-bottom: 10px;
+        color:black;
+    }
+    
